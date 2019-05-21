@@ -1,0 +1,152 @@
+body{
+	font-family:'Oswald', sans-serif;
+	font-size: 14px;
+	background-color: #FFE4B5;
+}
+
+/*HEADER*/
+.navbar-brand {
+	padding: 0;
+	margin: 15px 10px 15px 10px;
+}
+.navbar-brand h1 {
+	font-size: 2em;
+	color: black;
+	margin: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:active,.navbar-brand a:visited {
+	text-decoration: none;
+	color: black;
+}
+#header-nav button {
+	margin-top: 25px;
+}
+
+#nav-list li {
+	font-size: 2em;
+}
+#nav-list li:nth-child(odd) {
+background-color: white;
+}
+#nav-list a {
+border: 6px solid white;
+}
+#chicken-nav:hover, #chicken-nav:active {
+border: 6px solid #ccff99;
+}
+/*END HEADER*/
+
+/*MAIN CONTENT*/
+#main-content {
+	background-color: lightgrey;
+}
+#main-content h2 {
+	font-size: 2.5em;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#main-content h3 {
+	font-size: 2em;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+div.section-colorbox {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+}
+#chicken div.section-colorbox {
+	background-color: #ccff99;
+}
+#beef div.section-colorbox {
+	background-color: #99ccff;
+}
+#sushi div.section-colorbox {
+	background-color: #ff9966;
+}
+#main-content section {
+	position: relative;
+	background-color: white;
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	padding: 0 10px 40px 10px;
+}
+#main-content p {
+	font-family: arial, sans-serif;
+}
+
+div.back2top {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 1.3em;
+	width:100%;
+	padding: 10px 0 10px 10px;
+}
+.menu-section a {
+	color: black;
+}
+.menu-section a:hover, .menu-section a:active, .menu-section a:visited{
+	text-decoration: none;
+}
+div.back2top:hover {
+	color: white;
+	background-color:#1a8c68;
+	border-top:1px solid black;
+}
+
+/*END MAIN CONTENT*/
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    /* Main content */
+ #main-content section {
+ 	height: 1250px;
+ 	overflow: hidden;
+ }
+  /* End Main Content */
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+ 
+  /* End Header */
+
+  /* Main content */
+#chicken section {
+ 	height: 950px;
+ 	overflow: hidden;
+ }
+#beef section {
+ 	height: 950px;
+ 	overflow: hidden;
+ }
+ #sushi section {
+ 	height: auto;
+ 	overflow: hidden;
+ }
+  /* End Main Content */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Main Content */
+
+  /* End Main Content */
+}
+
+/********** Super extra small devices Only **********/
+@media (max-width: 479px) {
+  /* Main Content */
+ div.back2top {
+	color: white;
+	background-color:#1a8c68;
+	border-top:1px solid black;
+}
+  /* End Main Content */
+}
